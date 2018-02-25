@@ -3,12 +3,6 @@ const hostname = '127.0.0.1';
 const port = 3000;
 var fs = require('fs');
 
-const server = http.createServer((req, res) => {
-  res.statusCode = 200;
-  res.setHeader('Content-Type', 'text/plain');
-  res.end('Hello World\n');
-});
-
-server.listen(port, hostname, () => {
-  console.log(`Server running at http://${hostname}:${port}/`);
-});
+var app = express();
+app.use(express.static(__dirname + "/static"));
+app.listen(port, hostname);
