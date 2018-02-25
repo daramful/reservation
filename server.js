@@ -1,7 +1,6 @@
 /*
 const http = require('http');
 const hostname = '127.0.0.1';
-<<<<<<< HEAD
 var port = process.env.PORT || 3000;
 var fs = require('fs');
 
@@ -47,11 +46,3 @@ http.createServer(app).listen(port);
 console.log('Server listening on port ' + port);
 console.log('srcPath is ' + srcPath);
 console.log('destPath is ' + destPath);
-=======
-const port = 3000;
-const express = require("express");
-// var fs = require('fs');
-var app = express();
-app.use(express.static(__dirname + "/static"));
-app.listen(port, hostname);
->>>>>>> ba928f1d94bc5bfa08b64f0969819e0e3b1e4842
