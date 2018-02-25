@@ -6,6 +6,17 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/daramful/reservation.git"
+  },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "connect": "^3.6.6",
+    "express": "^4.16.2",
+    "node-sass": "^4.7.2",
+    "node-sass-middleware": "^0.11.0",
+    "serve-static": "^1.13.2"
+  }
 }
