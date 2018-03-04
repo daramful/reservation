@@ -13,12 +13,18 @@ namespace api
 {
     public class Startup
     {
-        public Startup(IConfiguration configuration)
+        public Startup(IConfiguration configuration, IHostingEnvironment environment)
         {
             Configuration = configuration;
+            Environment = environment;
+            foreach (var config in Configuration.AsEnumerable()){
+                Console.WriteLine($"{config.Key}: {config.Value}");
+            }
         }
 
-        public IConfiguration Configuration { get; }
+        public IConfiguration Configuration {get;}
+        public IHostingEnvironment Environment {get;}
+
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
@@ -32,7 +38,15 @@ namespace api
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+                app.UseBrowserLink();
             }
+            else
+            {
+                app.UseExceptionHandler("/Error");
+            }
+
+
+            app.UseStaticFiles();
 
             app.UseMvc();
         }
