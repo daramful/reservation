@@ -8,3 +8,13 @@
 /Users/ginny/DevFolder/reservation/api/obj/Debug/netcoreapp2.0/api.AssemblyInfo.cs
 /Users/ginny/DevFolder/reservation/api/obj/Debug/netcoreapp2.0/api.dll
 /Users/ginny/DevFolder/reservation/api/obj/Debug/netcoreapp2.0/api.pdb
+/Users/junbinpark/Projects/personal/Res/api/bin/Debug/netcoreapp2.0/api.deps.json
+/Users/junbinpark/Projects/personal/Res/api/bin/Debug/netcoreapp2.0/api.runtimeconfig.json
+/Users/junbinpark/Projects/personal/Res/api/bin/Debug/netcoreapp2.0/api.runtimeconfig.dev.json
+/Users/junbinpark/Projects/personal/Res/api/bin/Debug/netcoreapp2.0/api.dll
+/Users/junbinpark/Projects/personal/Res/api/bin/Debug/netcoreapp2.0/api.pdb
+/Users/junbinpark/Projects/personal/Res/api/obj/Debug/netcoreapp2.0/api.csproj.CoreCompileInputs.cache
+/Users/junbinpark/Projects/personal/Res/api/obj/Debug/netcoreapp2.0/api.AssemblyInfoInputs.cache
+/Users/junbinpark/Projects/personal/Res/api/obj/Debug/netcoreapp2.0/api.AssemblyInfo.cs
+/Users/junbinpark/Projects/personal/Res/api/obj/Debug/netcoreapp2.0/api.dll
+/Users/junbinpark/Projects/personal/Res/api/obj/Debug/netcoreapp2.0/api.pdb

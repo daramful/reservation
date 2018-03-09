@@ -12533,23 +12533,23 @@
     ]
   },
   "packageFolders": {
-    "/Users/ginny/.nuget/packages/": {},
+    "/Users/junbinpark/.nuget/packages/": {},
     "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/ginny/DevFolder/reservation/api/api.csproj",
+      "projectUniqueName": "/Users/junbinpark/Projects/personal/Res/api/api.csproj",
       "projectName": "api",
-      "projectPath": "/Users/ginny/DevFolder/reservation/api/api.csproj",
-      "packagesPath": "/Users/ginny/.nuget/packages/",
-      "outputPath": "/Users/ginny/DevFolder/reservation/api/obj/",
+      "projectPath": "/Users/junbinpark/Projects/personal/Res/api/api.csproj",
+      "packagesPath": "/Users/junbinpark/.nuget/packages/",
+      "outputPath": "/Users/junbinpark/Projects/personal/Res/api/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "/Users/ginny/.nuget/NuGet/NuGet.Config"
+        "/Users/junbinpark/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"
@@ -12571,14 +12571,14 @@
     "frameworks": {
       "netcoreapp2.0": {
         "dependencies": {
-          "Microsoft.NETCore.App": {
-            "target": "Package",
-            "version": "2.0",
-            "autoReferenced": true
-          },
           "Microsoft.AspNetCore.All": {
             "target": "Package",
-            "version": "2.0.0"
+            "version": "[2.0.0, )"
+          },
+          "Microsoft.NETCore.App": {
+            "target": "Package",
+            "version": "[2.0.0, )",
+            "autoReferenced": true
           }
         },
         "imports": [
