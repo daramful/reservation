@@ -15,9 +15,11 @@
   "dependencies": {
     "connect": "^3.6.6",
     "express": "^4.16.2",
+    "foundation-sites": "^6.4.4-rc1",
     "node-sass": "^4.7.2",
     "node-sass-middleware": "^0.11.0",
-    "serve-static": "^1.13.2",
-    "foundation-sites": "^6.4.4-rc1"
+    "npm": "^5.7.1",
+    "react": "^16.2.0",
+    "serve-static": "^1.13.2"
   }
 }

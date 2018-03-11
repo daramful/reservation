@@ -9,46 +9,36 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 
-namespace api
-{
-    public class Startup
-    {
-        public Startup(IConfiguration configuration, IHostingEnvironment environment)
-        {
+namespace api {
+    public class Startup {
+        public Startup (IConfiguration configuration, IHostingEnvironment environment) {
             Configuration = configuration;
             Environment = environment;
-            foreach (var config in Configuration.AsEnumerable()){
-                Console.WriteLine($"{config.Key}: {config.Value}");
+            foreach (var config in Configuration.AsEnumerable ()) {
+                Console.WriteLine ($"{config.Key}: {config.Value}");
             }
         }
 
-        public IConfiguration Configuration {get;}
-        public IHostingEnvironment Environment {get;}
-
+        public IConfiguration Configuration { get; }
+        public IHostingEnvironment Environment { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
-        public void ConfigureServices(IServiceCollection services)
-        {
-            services.AddMvc();
+        public void ConfigureServices (IServiceCollection services) {
+            services.AddMvc ();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
-        {
-            if (env.IsDevelopment())
-            {
-                app.UseDeveloperExceptionPage();
-                app.UseBrowserLink();
-            }
-            else
-            {
-                app.UseExceptionHandler("/Error");
+        public void Configure (IApplicationBuilder app, IHostingEnvironment env) {
+            if (env.IsDevelopment ()) {
+                app.UseDeveloperExceptionPage ();
+                app.UseBrowserLink ();
+            } else {
+                app.UseExceptionHandler ("/Error");
             }
 
+            app.UseStaticFiles ();
 
-            app.UseStaticFiles();
-
-            app.UseMvc();
+            app.UseMvc ();
         }
     }
 }

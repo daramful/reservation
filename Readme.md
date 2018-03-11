@@ -4,6 +4,8 @@
 
 * Use Postman to check the status of endpoints (200, 400, 404, 500). At this initial development phase, there only should be 200. (return Ok())
 
+#To run mongod database
+- mongod --dbpath ./data/db
 
 #To run web (frontend):
 - cd web
@@ -13,3 +15,4 @@ Dev tools/frameworks needed:
 - .net core 2.0
 - react.js
 - node.js
+- mongodb
