@@ -11,4 +11,5 @@
 
 #Start Server
 1. Go to directory
-2. node server.js
+2. mongod --dbpath ./data/db
+3. node server.js

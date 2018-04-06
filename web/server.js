@@ -19,6 +19,7 @@ var MongoURL = "mongodb://" + hostname + ":27017/data";
 MongoClient.connect(MongoURL, function(err, db) {
   if (err) throw err;
   console.log("Database created!");
+  var dbo = db.db("");
   db.close();
 });
 
