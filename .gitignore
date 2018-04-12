@@ -74,5 +74,8 @@ Session.vim
 # auto-generated tag files
 tags
 
+##
+web/node_modules/*
+package-lock.json
 
 # End of https://www.gitignore.io/api/vim,node
